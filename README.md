@@ -27,6 +27,12 @@ php artisan vendor:publish --provider="Vinevax\ModularLaravel\ModularLaravelServ
 php artisan modules:create ModuleName
 ```
 
+### Fix modules structure
+Since empty folders are not in saved in git, you can run the following command, to ensure every folder exists:
+```bash
+php artisan modules:fix
+```
+
 ## Testing
 To enable tests, you need to modify your `phpunit.xml` configuration.
 Add the following two test suites (if you've changed the default paths, you may need to change the test path)
