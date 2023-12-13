@@ -4,6 +4,7 @@ namespace Vinevax\ModularLaravel;
 
 use Illuminate\Support\ServiceProvider;
 use Vinevax\ModularLaravel\Commands\CreateModuleCommand;
+use Vinevax\ModularLaravel\Commands\FixModuleStructureCommand;
 use Vinevax\ModularLaravel\Commands\InstallModulePackageCommand;
 
 class ModularLaravelServiceProvider extends ServiceProvider
@@ -21,6 +22,7 @@ class ModularLaravelServiceProvider extends ServiceProvider
             $this->commands([
                 InstallModulePackageCommand::class,
                 CreateModuleCommand::class,
+                FixModuleStructureCommand::class,
             ]);
         }
 
