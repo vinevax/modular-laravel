@@ -5,7 +5,7 @@ namespace Vinevax\ModularLaravel\Commands;
 use Illuminate\Console\Command;
 use Illuminate\Support\Facades\File;
 
-class FixModuleStructure extends Command
+class FixModuleStructureCommand extends Command
 {
     protected $signature = 'modules:fix';
 
